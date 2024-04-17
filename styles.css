@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-size: 3.5em;
+    background-color: transparent;
+}
+h2{
+    font-size: 2.7em;
+}
+h3{
+    font-size: 2em;
+}
+
+p{
+    font-size: 1.25em;
+    background-color: transparent;
+    padding: 0 1.8em;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+
+body {
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    margin: auto;
+}
+
+header{
+    background-color: #ededed;
+
+}
+
+header .logo{
+    margin:0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 1.8em;
+    color: orangered;
+    font-style:italic;
+    text-decoration:underline;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+    font-size: 1.5em;
+    margin-right: 30px;
+}
+
+header a:hover{
+    color: orangered;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,2),
+        rgba(0,0,0,.5)
+    ),url(imgs/cambio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /*para que cubra toda la pantalla*/
+    background-position: center center; /*para centrar la imagen*/
+}
+
+#hero p, h1{
+    color: white;
+    margin: 75px 0 ;
+}
+
+#hero p{
+    font-size: 1.1em;
+}
+
+.container h2, h3{
+    color:orangered;
+}
+
+#sobre-mi .container{
+    text-align: center;
+    padding: 0 12px;
+}
+
+#planes{
+    background-color: rgb(30, 30, 30);
+}
+
+#planes .container{
+    text-align: center;
+    padding: 15px 12px;
+
+}
+
+#planes h2{
+    padding-top: 20px;
+    font-size: 3.2em;
+    color:orangered;
+    text-align: center;
+    justify-content: center;
+}
+
+#planes .imgs-container{
+    background-position: center;
+    background-size: cover;
+    color:antiquewhite;
+    padding:30px;
+    margin: 20px;
+    border-radius: 15px;
+    min-width: 15vh;
+    min-height: 15vh;
+}
+
+.imgs-container:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)
+    ),
+    url(imgs/entreno1.jpg);
+}
+
+.imgs-container:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)
+    ),
+    url(imgs/dieta1.jpg);
+}
+
+.imgs-container:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)
+    ),
+    url(imgs/combo.jpg) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    list-style: none;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 12px;
+    line-height: 30px;
+    background: linear-gradient(
+        rgba(30,30,30,.7), transparent
+    )
+}
+
+footer h3{
+    padding:15px;
+    margin:0;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+/*PARTE RESPONSIVE*/
+
+@media (min-width: 880px) {
+    header{
+        position: fixed;
+        width: 100%;
+    } /*con esto cuando scrolleamos la navbar se mantiene*/
+
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+
+    #hero p{
+        font-size: 25px;
+    }
+}
+
+@media (min-width:1300px){
+
+    #planes .container{
+        max-width: 50%;
+    }
+}
