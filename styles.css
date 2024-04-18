@@ -47,7 +47,7 @@ header .logo{
     padding: 25px 30px;
     font-weight: bold;
     font-size: 1.8em;
-    color: orangered;
+    color: #edc454;
     font-style:italic;
     text-decoration:underline;
 }
@@ -75,7 +75,8 @@ header a{
 }
 
 header a:hover{
-    color: orangered;
+    color: #edc454;
+    text-decoration: underline #edc454;
 }
 
 #hero{
@@ -87,8 +88,8 @@ header a:hover{
     height: 100vh;
     background-image: linear-gradient(
         0deg,
-        rgba(0,0,0,2),
-        rgba(0,0,0,.5)
+        rgba(0,0,0,.9),
+        rgba(0,0,0,.2)
     ),url(imgs/cambio.jpg);
     background-repeat: no-repeat;
     background-size: cover; /*para que cubra toda la pantalla*/
@@ -105,7 +106,7 @@ header a:hover{
 }
 
 .container h2, h3{
-    color:orangered;
+    color:#edc454;
 }
 
 #sobre-mi .container{
@@ -126,9 +127,14 @@ header a:hover{
 #planes h2{
     padding-top: 20px;
     font-size: 3.2em;
-    color:orangered;
+    color: #edc454;
     text-align: center;
     justify-content: center;
+}
+
+#planes h3{
+    color: #edc454;
+    text-decoration: underline;
 }
 
 #planes .imgs-container{
@@ -145,8 +151,8 @@ header a:hover{
 .imgs-container:first-child{
     background-image: linear-gradient(
         0deg,
-        rgba(0,0,0,.5),
-        rgba(0,0,0,.5)
+        rgba(0,0,0,.6),
+        rgba(0,0,0,.6)
     ),
     url(imgs/entreno1.jpg);
 }
@@ -154,8 +160,8 @@ header a:hover{
 .imgs-container:nth-child(2){
     background-image: linear-gradient(
         0deg,
-        rgba(0,0,0,.5),
-        rgba(0,0,0,.5)
+        rgba(0,0,0,.6),
+        rgba(0,0,0,.6)
     ),
     url(imgs/dieta1.jpg);
 }
@@ -163,8 +169,8 @@ header a:hover{
 .imgs-container:nth-child(3){
     background-image: linear-gradient(
         0deg,
-        rgba(0,0,0,.5),
-        rgba(0,0,0,.5)
+        rgba(0,0,0,.6),
+        rgba(0,0,0,.6)
     ),
     url(imgs/combo.jpg) ;
     display: flex;
@@ -186,6 +192,7 @@ footer{
 footer h3{
     padding:15px;
     margin:0;
+    color: #edc454;
 }
 
 footer a{
